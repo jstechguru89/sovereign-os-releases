@@ -17,6 +17,12 @@ Primary mirror (Cloudflare R2): `https://dl.sovereignos.pro/v<version>/<file>`
 
 The same files are attached to the [releases](../../releases) here as a fallback.
 
+The Windows NSIS setup was rebuilt on 2026-08-08; verify with
+
+```
+sha256  0a87ad3682ee0b463c1d7987c905b7ca6107a142e17a251a7bda114ee274c07b  Sovereign.OS_0.1.1_x64-setup.exe
+```
+
 Installers are unsigned — SmartScreen may warn on first run. The `.deb`/`.rpm` require
 `libwebkit2gtk-4.1-0` and `libgtk-3-0`; the AppImage bundles them.
 
