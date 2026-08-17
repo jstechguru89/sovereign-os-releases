@@ -5,22 +5,28 @@ a private repository; this repo only hosts installer releases.
 
 Primary mirror (Cloudflare R2): `https://dl.sovereignos.pro/v<version>/<file>`
 
-## Latest — 0.1.1
+> [!CAUTION]
+> **0.1.1 and 0.1.2 are deprecated.** Those packaged builds render broken (unstyled UI) due to a
+> CSP nonce-injection bug in packaging. Download 0.1.3 or later.
+
+## Latest — 0.1.3
 
 | Platform | File |
 |---|---|
-| Windows (recommended) | [`Sovereign.OS_0.1.1_x64-setup.exe`](https://dl.sovereignos.pro/v0.1.1/Sovereign.OS_0.1.1_x64-setup.exe) — NSIS setup |
-| Windows | [`Sovereign.OS_0.1.1_x64_en-US.msi`](https://dl.sovereignos.pro/v0.1.1/Sovereign.OS_0.1.1_x64_en-US.msi) |
-| Linux (any distro) | [`Sovereign.OS_0.1.1_amd64.AppImage`](https://dl.sovereignos.pro/v0.1.1/Sovereign.OS_0.1.1_amd64.AppImage) |
-| Debian / Ubuntu | [`Sovereign.OS_0.1.1_amd64.deb`](https://dl.sovereignos.pro/v0.1.1/Sovereign.OS_0.1.1_amd64.deb) |
-| Fedora / RHEL | [`Sovereign.OS-0.1.1-1.x86_64.rpm`](https://dl.sovereignos.pro/v0.1.1/Sovereign.OS-0.1.1-1.x86_64.rpm) |
+| Windows (recommended) | [`Sovereign.OS_0.1.3_x64-setup.exe`](https://dl.sovereignos.pro/v0.1.3/Sovereign.OS_0.1.3_x64-setup.exe) — NSIS setup |
+| Windows | [`Sovereign.OS_0.1.3_x64_en-US.msi`](https://dl.sovereignos.pro/v0.1.3/Sovereign.OS_0.1.3_x64_en-US.msi) |
+| Linux (any distro) | [`Sovereign.OS_0.1.3_amd64.AppImage`](https://dl.sovereignos.pro/v0.1.3/Sovereign.OS_0.1.3_amd64.AppImage) |
+| Debian / Ubuntu | [`Sovereign.OS_0.1.3_amd64.deb`](https://dl.sovereignos.pro/v0.1.3/Sovereign.OS_0.1.3_amd64.deb) |
+| Fedora / RHEL | [`Sovereign.OS-0.1.3-1.x86_64.rpm`](https://dl.sovereignos.pro/v0.1.3/Sovereign.OS-0.1.3-1.x86_64.rpm) |
 
 The same files are attached to the [releases](../../releases) here as a fallback.
 
-The Windows NSIS setup was rebuilt on 2026-08-08; verify with
+Verify Linux downloads with
 
 ```
-sha256  0a87ad3682ee0b463c1d7987c905b7ca6107a142e17a251a7bda114ee274c07b  Sovereign.OS_0.1.1_x64-setup.exe
+sha256  0e04c1007739eb5e8c86e4e98525a89b4db983fc17584a63d2c16d3bae3a7e45  Sovereign.OS_0.1.3_amd64.AppImage
+sha256  6976ed95b483c420cd0a59d78b282bf85aefb5ee9069dd15bf78b9ec02a77b94  Sovereign.OS_0.1.3_amd64.deb
+sha256  9ca127b6fbfc65f1860a9788d98a65b011d77d285da8cea150236e4e7330d5c0  Sovereign.OS-0.1.3-1.x86_64.rpm
 ```
 
 Installers are unsigned — SmartScreen may warn on first run. The `.deb`/`.rpm` require
